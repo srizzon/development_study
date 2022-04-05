@@ -1,4 +1,6 @@
-# Comentários
+# Aula 05
+
+## Comentários
 
 ```
 // Comentários de uma única linha
@@ -8,7 +10,7 @@
 */
 ```
 
-# Variáveis e tipos primitivos
+## Variáveis e tipos primitivos
 
 - Podem começar com letra, $ ou _
 - Não podem começar com números
@@ -24,7 +26,7 @@
 
 > Variáveis servem para gente guardar **dados**.
 
-## Tipos primitivos
+### Tipos primitivos
 - number (5; 18; -12; 0.5;)
     - Infinity
     - NaN
