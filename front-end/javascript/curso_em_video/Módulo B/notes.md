@@ -92,7 +92,7 @@ numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 
 # Aula 07 - Operadores (parte 1)
 
-## Arítimeticos
+## Operadores `Arítimeticos`
 
 São operadores binários, que precisam de dois operandos. Por exemplo: 5 + 2.
 > '+' | '-' | '*' | '/' | '%' | '**'
@@ -116,7 +116,7 @@ Exemplos:
 3. `* / %`
 4. `+ -`
 
-## Auto-atribuição
+## Operadores de `Atribuição`
 Os operadores de auto-atribuição são `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`.
 
 Exemplos:
@@ -143,7 +143,76 @@ numero--; // Pós decremento
 --numero; // Pré decremento
 ```
 
-- Atribuição
-- Relacionais
-- Lógicos
-- Ternários
+# Aula 08 - Operadores (parte 2)
+
+## Operadores `Relacionais`
+Os operadores relacionais são `<`, `>`, `<=`, `>=`, `==`, `!=`, `===`, `!==`.
+
+Exemplos:
+```javascript
+5 > 2; // true
+7 < 4; // false
+8 >= 8; // true
+9 <= 7; // false
+5 == 5; // true
+4 != 4; // false
+5 === '5'; // false
+5 !== '5'; // true
+```
+
+### **Operadores de identidade**
+Os operadores de identidade comparam o valor e o tipo.
+
+Exemplos:
+```javascript
+5 == 5; // true
+5 == '5'; // true
+5 === '5'; // false
+5 === 5; // true
+```
+
+## Operadores de `Lógicos`
+Os operadores lógicos são `!`, `&&`, `||`.
+
+- ! significa `negação`.
+    - É tratado como um operador unário. Só precisa de um operando. Exemplo: `!true`;
+- && significa `conjunção`.
+    - É tratado como um operador binário. Precisa de dois operandos. Exemplo: `true && false`;
+- || significa `disjunção`.
+    - É tratado como um operador binário. Precisa de dois operandos. Exemplo: `true || false`;
+
+Exemplos:
+```javascript
+idade >= 15 && idade <= 17;         // A idade está entre 15 e 17 anos?
+estado == 'RJ' || estado == 'SP';   // O estado é RJ ou SP?
+salario > 1500 && sexo != 'M';      // O salario é maior que 1500 e o sexo é diferente de M (masculino)?
+```
+
+Ordem de precedência:
+```javascript
+1. `()` // Arietmético
+2. `**` // Aritmético
+3. `* / %` // Aritmético
+4. `+ -` // Aritmético
+5. `< > <= >= == != === !==` // Relacional
+6. `!` // Lógico
+7. `&&` // Lógico
+8. `||` // Lógico
+```
+
+> ℹ Obs: os operadores relacionais não possuem ordem de precedência. Quem está mais a esquerda é o operador mais prioritário.
+
+## Operadores de `Ternários`
+Os operadores de ternário são `?` e `:`.
+
+Construção:
+```javascript
+teste `?` true `:` false
+```
+
+Exemplo:
+```javascript
+var idade = 18;
+var categoria = idade >= 18 ? 'adulto' : 'crianca';
+console.log(categoria); // adulto
+```
