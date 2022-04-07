@@ -2,7 +2,7 @@
 
 ## Comentários
 
-```
+```javascript
 // Comentários de uma única linha
 
 /*
@@ -59,13 +59,13 @@ Com as versões mais recentes do JS podemos utilizar apenas o `Number`.
 ## Formatando strings
 
 > Concatenação
-```
+```javascript
 var nome = 'Maria';
 'Eu estou aprendendo ' + nome + '!';
 ```
 
 > Template string
-```
+```javascript
 var nome = 'Maria';
 `Eu estou aprendendo ${nome}!`;
 ```
@@ -78,14 +78,72 @@ var nome = 'Maria';
 ## Formatando números
 
 > toFixed(número)
-```
+```javascript
 var numero = 10.5;
 numero.toFixed(2);
 ```
 
 > toLocaleString()
-```
+```javascript
 var numero = 1545.5;
 numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 //R$ 1.545,50
 ```
+
+# Aula 07 - Operadores (parte 1)
+
+## Arítimeticos
+
+São operadores binários, que precisam de dois operandos. Por exemplo: 5 + 2.
+> '+' | '-' | '*' | '/' | '%' | '**'
+
+Exemplos:
+```javascript
+5 + 2 = 7   // Adição
+5 - 2 = 3   // Subtração
+5 * 2 = 10  // Multiplicação
+5 / 2 = 2.5 // Divisão
+5 % 2 = 1   // Módulo (Resto da divisão inteira)
+5 ** 2 = 25 // Exponenciação (potência)
+```
+
+## Precedência
+> ⚠ Assim como na matemática, exite prescendência de operadores. Utilize parênteses para garantir a ordem desejada.
+
+**Ordem de precedência:**
+1. `()`
+2. `**`
+3. `* / %`
+4. `+ -`
+
+## Auto-atribuição
+Os operadores de auto-atribuição são `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`.
+
+Exemplos:
+```javascript
+var numero = 10;
+numero = numero + 5;    // Sem auto-atribuição
+console.log(numero);    // 15
+numero += 5;            // Com auto-atribuição
+console.log(numero);    // 20
+```
+
+## Incremento e decremento
+Os operadores de incremento e decremento são `++` e `--`.
+
+> Existem dois tipos de incrementos e decrementos, os `pós` e os `pré`.
+
+Exemplos:
+```javascript
+var numero = 10;
+numero++; // Pós incremento
+numero--; // Pós decremento
+
+++numero; // Pré incremento
+--numero; // Pré decremento
+```
+
+- Atribuição
+- Relacionais
+- Lógicos
+- Ternários
