@@ -40,5 +40,52 @@
 
 > Podemos usar o `typeof` para saber o tipo primitivo de uma variável.
 
+<br>
+
 # Aula 06 - Tratamento de dados
 
+## String > Número
+- Para converter uma string em um número, usamos o `Number.parseInt` ou `Number.parseFloat`.
+> Number.parseInt(string)
+
+> Number.parseFloat(string)
+
+Com as versões mais recentes do JS podemos utilizar apenas o `Number`.
+> Number(string)
+
+## Número > String
+- Para converter um número em uma string, usamos o `String(número)` ou `número.toString`.
+
+## Formatando strings
+
+> Concatenação
+```
+var nome = 'Maria';
+'Eu estou aprendendo ' + nome + '!';
+```
+
+> Template string
+```
+var nome = 'Maria';
+`Eu estou aprendendo ${nome}!`;
+```
+
+> Atributos de string
+- .length
+- .toUpperCase()
+- .toLowerCase()
+
+## Formatando números
+
+> toFixed(número)
+```
+var numero = 10.5;
+numero.toFixed(2);
+```
+
+> toLocaleString()
+```
+var numero = 1545.5;
+numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+//R$ 1.545,50
+```
