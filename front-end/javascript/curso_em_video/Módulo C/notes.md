@@ -70,3 +70,13 @@ function sair(){
     a.style.backgroundColor = 'green';
 }
 ```
+
+## Perguntas
+- O que é uma função?
+> Uma função é um bloco de código que pode ser executado.
+
+- Cite três eventos que podem acontecer com elementos DOM.
+> `click`, `mouseenter`, `mouseout`.
+
+- Como pegar os valores de um input e fazer cálculo com eles?
+> Através do `value` do input.
