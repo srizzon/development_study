@@ -36,3 +36,12 @@ M - Model
 ## Perguntas
 - Qual a diferença entre `innerText` e `innerHTML`?
 > `innerText` retorna o texto sem tags, `innerHTML` retorna o texto com tags.
+
+- O que significa a sigla DOM?
+> DOM significa Document Object Model.
+
+- O que são os elementos `Parent` e os elementos `Child` em uma árvore DOM?
+> `Parent` é o elemento pai, `Child` é o elemento filho.
+
+- Quais os cinco principais métodos de selecionar elementos DOM dentro do JS?
+> `getElementById()`, `getElementsByTagName()`, `getElementsByName()`, `getElementsByClassName()`, `querySelector()`.
