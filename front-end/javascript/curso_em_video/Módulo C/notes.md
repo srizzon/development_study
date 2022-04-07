@@ -45,3 +45,28 @@ M - Model
 
 - Quais os cinco principais métodos de selecionar elementos DOM dentro do JS?
 > `getElementById()`, `getElementsByTagName()`, `getElementsByName()`, `getElementsByClassName()`, `querySelector()`.
+
+# Aula 10 - Eventos DOM
+
+Exemplo:
+```javascript
+var a = window.document.getElementById('area');
+
+a.addEventListener('click', clicar);
+a.addEventListener('mouseenter', entrar);
+a.addEventListener('mouseout', sair);
+
+function clicar() {
+    a.innerHTML = "Clicou!";
+    a.style.backgroundColor = 'red';
+}
+
+function entrar(){
+    a.innerHTML = "Entrou!";
+}
+
+function sair(){
+    a.innerHTML = "Saiu!";
+    a.style.backgroundColor = 'green';
+}
+```
