@@ -1,4 +1,4 @@
-# Aula 05
+# Aula 05 - Variáveis e tipos primitivos
 
 ## Comentários
 
@@ -39,3 +39,6 @@
 - function
 
 > Podemos usar o `typeof` para saber o tipo primitivo de uma variável.
+
+# Aula 06 - Tratamento de dados
+
