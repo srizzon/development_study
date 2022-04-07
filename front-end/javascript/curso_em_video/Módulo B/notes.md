@@ -207,7 +207,7 @@ Os operadores de ternário são `?` e `:`.
 
 Construção:
 ```javascript
-teste `?` true `:` false
+[condição] `?` true `:` false
 ```
 
 Exemplo:
